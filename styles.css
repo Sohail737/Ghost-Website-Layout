@@ -1,0 +1,289 @@
+:root {
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+}
+
+.header {
+  /* position: absolute;
+      top:0;
+      right:0;
+      left:0; */
+  background-color: var(--black);
+  width: 100%;
+}
+
+.hero {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  min-height: 300px;
+}
+
+.hero-img-heading {
+  padding: 2rem 5rem;
+}
+
+.hero-img-heading > img {
+  max-width: 150px;
+}
+
+.hero-img-heading > h2 {
+  font-weight: 100;
+}
+
+.nav {
+  display: flex;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.nav-pills {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: var(--white);
+
+  font-size: 13px;
+}
+
+.left-nav {
+  align-self: flex-end;
+  text-transform: uppercase;
+}
+
+.social-media-links {
+  align-self: flex-end;
+}
+
+.subscribe {
+  border: 1px solid var(--white);
+  border-radius: 0.7rem;
+  padding: 0.2rem 0.4rem;
+  letter-spacing: 1px;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: auto;
+}
+
+/* Big Posts */
+
+.inner-big-posts {
+  display: flex;
+  padding: 1rem;
+}
+
+.post-image-big {
+  width: 679px;
+  height: 350px;
+}
+
+/* Medium Posts */
+
+.inner-medium-posts {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 500px;
+  padding: 1rem;
+}
+
+.post-image-medium {
+  width: 500px;
+  height: 280px;
+}
+
+/* Small Posts */
+
+.inner-small-posts {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 320px;
+}
+
+.inner-small-posts {
+  display: flex;
+  padding: 1rem;
+}
+
+.post-image-small {
+  width: 320px;
+  height: 200px;
+}
+
+/* Post Content big */
+.post-content-big {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+  flex: 0 1 361px;
+  justify-content: space-around;
+}
+
+.post-tag {
+  text-transform: uppercase;
+  color: cornflowerblue;
+  font-size: small;
+}
+
+.post-content-big > h2 {
+  font-size: 2.2rem;
+  word-wrap: break-word;
+  margin: 0.5rem 0;
+}
+
+.post-content-big > p {
+  font-size: 1.2rem;
+  word-wrap: break-word;
+  margin: 0.5rem 0;
+}
+
+/* Post Content Medium */
+
+.post-content-medium {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.post-content-medium > h2 {
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  margin: 0.5rem 0;
+}
+
+.post-content-medium > p {
+  font-size: 1rem;
+  word-wrap: break-word;
+  margin: 0.5rem 0;
+}
+/* Post Content Small */
+
+.post-content-small {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.post-content-small > h2 {
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  margin: 0.5rem 0;
+}
+
+.post-content-small > p {
+  font-size: 1rem;
+  word-wrap: break-word;
+  margin: 0.5rem 0;
+}
+
+/* Post Footer */
+.post-footer {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem 0;
+}
+
+.post-footer-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5rem;
+  font-size: small;
+}
+
+.post-footer-content > a {
+  text-decoration: none;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.bul {
+  margin: 0 0.2rem;
+}
+
+.post-footer-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 2rem;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: var(--black);
+  min-height: 150px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  min-height: 50px;
+  color: white;
+  font-weight: 100px;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav {
+    display: block;
+    font-size: 0.7rem;
+    padding: 1rem;
+  }
+
+  .social-media-links {
+    visibility: hidden;
+  }
+
+  .posts {
+    max-width: 100%;
+  }
+  .inner-big-posts,
+  .inner-medium-posts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-image-big,
+  .post-image-medium {
+    width: 320px;
+    height: 200px;
+  }
+
+  .post-content-big {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 0 1 auto;
+    padding: 1rem 0;
+  }
+  .post-content-big > h2 {
+    font-size: 1.5rem;
+  }
+  .post-content-big > p {
+    font-size: 1rem;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
